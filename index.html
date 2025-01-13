@@ -32,13 +32,52 @@
 
     <!-- ! styles -->
 
-    <link href="./css/reset.css" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
-
-
-
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <picture>
+            <source srcset="./images/logo.webp 1x, ./images/logo@2x.webp 2x" type="image/webp" />
+            <img
+              class="logo"
+              src="./images/logo.png"
+              srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+              width="187"
+              height="32"
+              alt="лого"
+              loading="lazy"
+            />
+          </picture>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#" aria-label="link to our product">Product</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#" aria-label="link to our customers">Customers</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#" aria-label="link to our pricng">Pricng</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#" aria-label="link to our resources">Resources</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__button-list">
+            <li class="header__button--item">
+              <button class="header__btn btn btn-reverse-accent" type="button">Sign In</button>
+            </li>
+            <li class="header__button--item">
+              <button class="header__btn btn btn-accent" type="button">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <!-- ! scripts -->
 
