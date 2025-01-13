@@ -81,9 +81,83 @@ button {
 .btn-accent {
   background-color: var(--accent);
   color: var(--white);
+  transition: background-color 300ms;
+}
+
+.btn-accent:hover,
+.btn-accent:focus,
+.btn-accent:active {
+  background-color: #173a56;
 }
 
 .btn-reverse-accent {
-  border-color: #BCD0E5;
+  border-color: #bcd0e5;
   color: #173a56;
+  transition: border-color 300ms, color 300ms;
+}
+
+.btn-reverse-accent:hover,
+.btn-reverse-accent:focus,
+.btn-reverse-accent:active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ! header */
+
+.header {
+  margin-bottom: 50px;
+}
+
+.header__inner {
+  height: 78px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.header .menu {
+  margin-right: 50px;
+}
+
+.menu {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 20px;
+}
+
+.menu__link {
+  transition: color 300ms;
+}
+
+.menu__link:hover,
+.menu__link:focus,
+.menu__link:active {
+  color: var(--accent);
+}
+.header__button-list {
+  display: flex;
+  gap: 14px;
+}
+.header__btn.btn-reverse-accent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 102px;
+  height: 46px;
+}
+.header__btn.btn-accent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 46px;
 }
