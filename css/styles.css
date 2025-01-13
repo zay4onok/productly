@@ -321,6 +321,17 @@ button {
     width: 30px;
     height: 20px;
   }
+  .menu-btn[aria-expanded='true']::before {
+    transform: rotate(45deg) translateY(7px) translateX(5px);
+  }
+  
+  .menu-btn[aria-expanded='true'] span {
+    opacity: 0;
+  }
+  
+  .menu-btn[aria-expanded='true']::after {
+    transform: rotate(-45deg) translateY(-7px) translateX(5px);
+  }
 }
 
 @media only screen and (max-width: 400px) {
