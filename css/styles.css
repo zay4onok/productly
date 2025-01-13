@@ -1,0 +1,60 @@
+:root {
+  --title: #2f281e;
+  --text: #544837;
+  --text-second: #567592;
+  --input: #bcd0e5;
+  --accent: #ff9900;
+  --white: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+button,
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  font-family: 'Poppins', serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
