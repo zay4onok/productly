@@ -39,18 +39,20 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <picture>
-            <source srcset="./images/logo.webp 1x, ./images/logo@2x.webp 2x" type="image/webp" />
-            <img
-              class="logo"
-              src="./images/logo.png"
-              srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
-              width="187"
-              height="32"
-              alt="лого"
-              loading="lazy"
-            />
-          </picture>
+          <a class="logo" href="./index.html" aria-label="link to home page">
+            <picture>
+              <source srcset="./images/logo.webp 1x, ./images/logo@2x.webp 2x" type="image/webp" />
+              <img
+                class="logo__img"
+                src="./images/logo.png"
+                srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+                width="187"
+                height="32"
+                alt="лого"
+                loading="lazy"
+              />
+            </picture>
+          </a>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
