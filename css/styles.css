@@ -1,8 +1,8 @@
+/* ! basic */
+
 :root {
   --title: #2f281e;
   --text: #544837;
-  --text-second: #567592;
-  --input: #bcd0e5;
   --accent: #ff9900;
   --white: #ffffff;
 }
@@ -52,9 +52,38 @@ button {
   cursor: pointer;
 }
 
-input {
+/* ! common styles */
+
+.container {
+  max-width: 1400px;
+  min-width: 320px;
+  padding: 0 145px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'Poppins', serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--title);
+}
+
+.btn {
   font-family: 'Poppins', serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.btn-reverse-accent {
+  border-color: #BCD0E5;
+  color: #173a56;
 }
