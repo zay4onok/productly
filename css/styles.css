@@ -178,6 +178,7 @@ button {
   height: 2px;
   left: 0;
   background-color: var(--accent);
+  transition: transform 300ms;
 }
 
 .menu-btn::before {
@@ -196,6 +197,19 @@ button {
   top: 50%;
   transform: translateY(-50%);
   background-color: var(--accent);
+  transition: opacity 300ms;
+}
+
+.menu-btn[aria-expanded='true']::before {
+  transform: rotate(45deg) translateY(13px) translateX(10px);
+}
+
+.menu-btn[aria-expanded='true'] span {
+  opacity: 0;
+}
+
+.menu-btn[aria-expanded='true']::after {
+  transform: rotate(-45deg) translateY(-13px) translateX(10px);
 }
 
 @media only screen and (max-width: 1100px) {
