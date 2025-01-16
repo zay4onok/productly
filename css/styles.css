@@ -279,9 +279,15 @@ button {
 /* ! ADVANTAGES */
 
 .advantages {
-  background: url(../images/advantages-bg.png) no-repeat center / contain;
+  background: url(../images/advantages-bg.png) no-repeat center / cover;
   margin-bottom: 120px;
   padding-bottom: 90px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages {
+    background-image: url(../images/advantages-bg@2x.png);
+  }
 }
 
 .advantages__title {
