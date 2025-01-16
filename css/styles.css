@@ -484,6 +484,22 @@ button {
   .hero__img {
     width: 100%;
   }
+  .advantages__list {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .advantages__title {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .advantages__title {
+    font-size: 31px;
+    line-height: 49px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
