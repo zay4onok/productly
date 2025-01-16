@@ -276,7 +276,48 @@ button {
   fill: #173a56;
 }
 
-.hero__img {
+/* ! ADVANTAGES */
+
+.advantages {
+  background: url(../images/advantages-bg.png) no-repeat center / contain;
+  margin-bottom: 120px;
+  padding-bottom: 90px;
+}
+
+.advantages__title {
+  text-align: center;
+  width: 540px;
+  margin: 0 auto 45px auto;
+}
+
+.advantages__list {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.advantages__item {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.advantages__item-img {
+  margin-bottom: 30px;
+}
+
+.advantages__item-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--title);
+  margin-bottom: 15px;
+}
+
+.advantages__btn {
+  width: 175px;
+  height: 53px;
+  margin: 0 auto;
 }
 
 /* ! mobile-menu */
