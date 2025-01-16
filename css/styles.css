@@ -519,3 +519,7 @@ button {
     height: 45px;
   }
 }
+  body {
+    font-size: 14px;
+    line-height: 24px;
+  }
