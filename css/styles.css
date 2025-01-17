@@ -339,6 +339,68 @@ button {
   margin: 0 auto;
 }
 
+/* ! FEATURES */
+
+.feature {
+  margin-bottom: 157px;
+}
+
+.feature__list {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.feature__design,
+.feature__product {
+  display: flex;
+  gap: 100px;
+}
+
+.feature__design-title,
+.feature__product-title,
+.feature__marketers-title {
+  margin-bottom: 22px;
+}
+
+.feature__design-list,
+.feature__product-list,
+.feature__marketers-list {
+  padding-top: 30px;
+}
+
+.feature__design-item:not(:last-child),
+.feature__product-item:not(:last-child),
+.feature__marketers-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.feature__design-subtitle,
+.feature__product-subtitle,
+.feature__marketers-subtitle {
+  color: var(--title);
+}
+
+.feature__product-box {
+  order: 2;
+}
+
+.feature__product-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.feature__product-img {
+  order: 1;
+}
+
+.feature__marketers {
+  display: flex;
+  gap: 85px;
+}
+
+
 /* ! mobile-menu */
 
 .mobile-menu {
