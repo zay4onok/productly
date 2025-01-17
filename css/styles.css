@@ -400,7 +400,6 @@ button {
   gap: 85px;
 }
 
-
 /* ! mobile-menu */
 
 .mobile-menu {
@@ -475,6 +474,19 @@ button {
   .hero__btn-link {
     justify-content: center;
   }
+  .feature__design,
+  .feature__product,
+  .feature__marketers {
+    display: block;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .feature__design-box,
+  .feature__product-box,
+  .feature__marketers-box {
+    margin-bottom: 100px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -514,6 +526,20 @@ button {
   }
   .menu-btn {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .feature__design,
+  .feature__product,
+  .feature__marketers {
+    max-width: 100%;
+  }
+  .feature__design-img,
+  .feature__product-img,
+  .feature__marketers-img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -647,5 +673,13 @@ button {
   .advantages__item-title {
     font-size: 18px;
     line-height: 28px;
+  }
+  .feature__list {
+    gap: 50px;
+  }
+  .feature__design-box,
+  .feature__product-box,
+  .feature__marketers-box {
+    margin-bottom: 50px;
   }
 }
