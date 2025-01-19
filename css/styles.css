@@ -56,7 +56,7 @@ button {
 
 .container {
   max-width: 1400px;
-  min-width: 300px;
+  min-width: 320px;
   padding: 0 145px;
   margin: 0 auto;
 }
@@ -407,6 +407,11 @@ button {
   background: url(../images/experts-bg.png) no-repeat center / cover;
   height: 900px;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .experts {
+    background-image: url(../images/experts-bg@2x.png);
+  }
+}
 .experts__container {
   position: relative;
   text-align: center;
@@ -538,6 +543,18 @@ button {
   .feature__product-box,
   .feature__marketers-box {
     margin-bottom: 100px;
+  }
+  .experts {
+    height: 100vh;
+  }
+  .experts__container {
+    justify-content: center;
+  }
+  .experts__title {
+    padding: 0;
+  }
+  .experts__list {
+    display: none;
   }
 }
 
@@ -733,5 +750,8 @@ button {
   .feature__product-box,
   .feature__marketers-box {
     margin-bottom: 50px;
+  }
+  .experts__title {
+    font-size: 30px;
   }
 }
