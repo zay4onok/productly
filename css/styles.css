@@ -533,7 +533,6 @@ button {
 }
 
 .strategies__list {
-  display: flex;
   margin: 0 -20px;
 }
 
@@ -562,6 +561,30 @@ button {
   color: var(--title);
   max-width: 294px;
 }
+.strategies .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 45px;
+}
+
+.strategies .slick-dots li {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+.strategies .slick-dots li.slick-active {
+  background-color: var(--accent);
+}
+
+.strategies .slick-dots button {
+  font-size: 0;
+}
+
 
 /* ! MEDIA */
 
