@@ -537,6 +537,7 @@ button {
 }
 
 .strategies__item {
+  width: 348px;
   margin: 0 20px;
 }
 
@@ -585,7 +586,6 @@ button {
   font-size: 0;
 }
 
-
 /* ! MEDIA */
 
 @media only screen and (max-width: 1400px) {
@@ -623,6 +623,15 @@ button {
   }
   .experts__list {
     display: none;
+  }
+  .strategies {
+    text-align: center;
+  }
+  .strategies__item-text,
+  .strategies__item-title,
+  .strategies__item-img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -767,6 +776,10 @@ button {
     font-size: 20px;
     line-height: 30px;
   }
+  .strategies__title {
+    font-size: 29px;
+    line-height: 49px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -796,6 +809,10 @@ button {
   .hero__btn {
     height: 45px;
   }
+  .strategies__item-img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -821,5 +838,9 @@ button {
   }
   .experts__title {
     font-size: 30px;
+  }
+  .strategies__title {
+    font-size: 27px;
+    line-height: 47px;
   }
 }
