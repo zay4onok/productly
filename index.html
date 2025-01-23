@@ -645,79 +645,94 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="./index.html" aria-label="link to home page">
-          <picture>
-            <source srcset="./images/logo.webp 1x, ./images/logo@2x.webp 2x" type="image/webp" />
-            <img
-              class="logo__img"
-              src="./images/logo.png"
-              srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
-              width="187"
-              height="32"
-              alt="лого"
-              loading="lazy"
-            />
-          </picture>
-        </a>
-        <ul class="footer__lists">
-          <li class="footer__lists-item">
-            <ul class="footer__list">
-              <li class="footer__list-item"
-                ><a class="footer__list-link" href="#" aria-label="link to 'About Us' page"
-                  >About Us</a
-                ></li
-              >
-              <li class="footer__list-item"
-                ><a class="footer__list-link" href="#" aria-label="link to 'Blog' page">Blog</a></li
-              >
-              <li class="footer__list-item"
-                ><a class="footer__list-link" href="#" aria-label="link to 'Contact' page"
-                  >Contact</a
-                ></li
-              >
-              <li class="footer__list-item"
-                ><a class="footer__list-link" href="#" aria-label="link to 'FAQ' page">FAQ</a></li
-              >
+        <div class="footer__container">
+          <a class="logo" href="./index.html" aria-label="link to home page">
+            <picture>
+              <source srcset="./images/logo.webp 1x, ./images/logo@2x.webp 2x" type="image/webp" />
+              <img
+                class="logo__img"
+                src="./images/logo.png"
+                srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+                width="187"
+                height="32"
+                alt="лого"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+          <div class="footer__lists-form-box">
+            <ul class="footer__lists">
+              <li class="footer__lists-item">
+                <ul class="footer__list">
+                  <li class="footer__list-item"
+                    ><a class="footer__list-link" href="#" aria-label="link to 'About Us' page"
+                      >About Us</a
+                    ></li
+                  >
+                  <li class="footer__list-item"
+                    ><a class="footer__list-link" href="#" aria-label="link to 'Blog' page"
+                      >Blog</a
+                    ></li
+                  >
+                  <li class="footer__list-item"
+                    ><a class="footer__list-link" href="#" aria-label="link to 'Contact' page"
+                      >Contact</a
+                    ></li
+                  >
+                  <li class="footer__list-item"
+                    ><a class="footer__list-link" href="#" aria-label="link to 'FAQ' page"
+                      >FAQ</a
+                    ></li
+                  >
+                </ul>
+              </li>
+              <li class="footer__lists-item">
+                <ul class="footer__list">
+                  <li class="footer__list-item"
+                    ><a class="footer__list-link" href="#" aria-label="link to 'Disclaimer' page"
+                      >Disclaimer</a
+                    ></li
+                  >
+                  <li class="footer__list-item"
+                    ><a class="footer__list-link" href="#" aria-label="link to 'Financing' page"
+                      >Financing</a
+                    ></li
+                  >
+                  <li class="footer__list-item"
+                    ><a
+                      class="footer__list-link"
+                      href="#"
+                      aria-label="link to 'Privacy Policy' page"
+                      >Privacy Policy</a
+                    ></li
+                  >
+                  <li class="footer__list-item"
+                    ><a
+                      class="footer__list-link"
+                      href="#"
+                      aria-label="link to 'Terms of Service' page"
+                      >Terms of Service</a
+                    ></li
+                  >
+                </ul>
+              </li>
             </ul>
-          </li>
-          <li class="footer__lists-item">
-            <ul class="footer__list">
-              <li class="footer__list-item"
-                ><a class="footer__list-link" href="#" aria-label="link to 'Disclaimer' page"
-                  >Disclaimer</a
-                ></li
-              >
-              <li class="footer__list-item"
-                ><a class="footer__list-link" href="#" aria-label="link to 'Financing' page"
-                  >Financing</a
-                ></li
-              >
-              <li class="footer__list-item"
-                ><a class="footer__list-link" href="#" aria-label="link to 'Privacy Policy' page"
-                  >Privacy Policy</a
-                ></li
-              >
-              <li class="footer__list-item"
-                ><a class="footer__list-link" href="#" aria-label="link to 'Terms of Service' page"
-                  >Terms of Service</a
-                ></li
-              >
-            </ul>
-          </li>
-        </ul>
-        <form class="footer__form">
-          <label class="footer__form-label visually-hidden"
-            >Phone<input
-              class="footer__form-input"
-              type="phone"
-              name="user_name"
-              minlength="13"
-              maxlength="13"
-              required
-            />
-          </label>
-          <button class="footer__form-btn btn btn-accent">Sign up Now</button>
-        </form>
+            <form class="footer__form">
+              <label class="footer__form-label visually-hidden" for="user_phone">Phone</label>
+              <input
+                class="footer__form-input"
+                id="user_phone"
+                type="phone"
+                name="user_phone"
+                minlength="13"
+                maxlength="13"
+                required
+                placeholder="Enter your phone Number"
+              />
+              <button class="footer__form-btn btn btn-accent" type="submit">Sign up Now</button>
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
 
