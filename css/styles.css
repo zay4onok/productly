@@ -634,7 +634,7 @@ button {
 }
 
 .footer__form-input::placeholder {
-  color: #BCD0E5;
+  color: #bcd0e5;
 }
 
 .footer__form-btn {
@@ -726,8 +726,28 @@ button {
   .header .menu {
     display: none;
   }
+
   .menu-btn {
     display: block;
+  }
+
+  .footer .logo {
+    justify-content: center;
+  }
+
+  .footer__lists-form-box {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer__lists {
+    margin: 0 auto;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .footer__form {
+    align-items: center;
   }
 }
 
@@ -898,5 +918,8 @@ button {
   .strategies__title {
     font-size: 27px;
     line-height: 47px;
+  }
+  .footer__form-input {
+    width: 100%;
   }
 }
